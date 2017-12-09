@@ -53,3 +53,11 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+
+# Misc
+ic_launcher/
+licensing/
+logo/
+StoreListingImages/
+Wallpapers/
+Widgets/
