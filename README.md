@@ -4,7 +4,9 @@
 This repository contains source code for [EmenoxZooper](https://play.google.com/store/apps/details?id=com.md.emenox), which is a widget application for [Zooper Widget Pro](https://play.google.com/store/apps/details?id=org.zooper.zwpro). I made this application back in Dec 
 2016. While writing this info, Emenox has 10-50k downloads on Play Store. 
 
-Since Zooper has stopped their support and me also not getting enough time to provide support and maintenance, I'm making this project open-source and free.So if you wanna tweak around with it, go ahead, make a pull request. 
+Since Zooper has stopped their support and me also not getting enough time to provide support and maintenance, I'm making this project open-source and free.So if you wanna tweak around with it, go ahead, make a pull request.
+
+This project is based on the [Polar dashboard](https://github.com/afollestad/polar-dashboard) made by [Aidan Follestad](https://github.com/afollestad)
 
 **No suported will be provided from my side anymore**
 
