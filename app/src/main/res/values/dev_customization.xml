@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- True enables the nav drawer layout -->
+    <bool name="nav_drawer_mode_default">false</bool>
+    <!-- Good for testing to switch between tabs and nav drawer, true shows a checkbox option in the overflow menu -->
+    <bool name="allow_nav_drawer_mode_switch">false</bool>
+
+    <!-- True enables the homepage -->
+    <bool name="homepage_enabled">true</bool>
+    <string name="homepage_description">
+        Thank you for downloading Emenox Zooper. If you have really liked the work, please don\'t forget to leave a rating on play store.
+    </string>
+    <!-- The large icon displayed in the home page -->
+    <drawable name="homepage_landing_icon">@drawable/ic_web</drawable>
+
+    <!-- URL to JSON file containing a map of wallpapers, leave empty to disable wallpapers. -->
+    <string name="wallpapers_json_url" formatted="false">
+        https://raw.githubusercontent.com/mddanishansari/Emenox-Wallpapers/master/emenox_wallpapers_json.json
+    </string>
+
+    <!-- When false, the Save button for wallpapers is hidden. -->
+    <bool name="wallpapers_allow_download">true</bool>
+
+    <!-- Email used to send icon requests, leave empty to disable this feature. -->
+    <string name="icon_request_email"></string>
+
+    <!-- Max number of icons that can be sent per request. -1 disables max count. The interval must ALSO be set below. -->
+    <integer name="icon_request_maxcount">-1</integer>
+
+    <!--
+        The interval in seconds in which users must wait between sending icon requests. 0 or less disables it.
+
+        If you want minutes: [seconds] = [minutes] * 60
+        If you want hours:   [seconds] = [hours] * 3600
+        If you want days:    [seconds] = [days] * 86400
+        If you want weeks:   [seconds] = [weeks] * 604800
+    -->
+    <integer name="icon_request_limit_interval">-1</integer>
+
+    <!-- Public Base64 from the developer console for license checking, optional -->
+    <string name="licensing_public_key">
+        MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl/+U1N67r0RjHi27WgpROnqisct9WBj+5AeNOZ3U/rw/WZI6cv/oGsMqsV0PegbH3bSIFRpwyXukOGYCwM62i4j5djTH181/nMxx8xei1HXCS+sctW+4fwBXNUq2vyvdUNS5flANI42uxQZwnnzY6zDASZL1gDGpdNtdskqwC5iboSL+xdp7MxDG4dKLu9Plb6ccbiW//3g1i7jsvK6dO37SOLEsKAkRoJhorrzs+lyqN5TpHL0VFG/8Ny1JBslY43sJEY8jXzanTrWeqU1CuD4CURcSMMx09FxFF2W+F6NN8+h+BaO/PU3lAOLpkxjRGRfDjMjAEYzWghurA+H/twIDAQAB
+    </string>
+
+    <!-- When true, the app will open the last selected page during restarts -->
+    <bool name="persist_selected_page">false</bool>
+
+    <!-- Email used to send feedback, leave empty to disable this feature. -->
+    <string name="feedback_email">ansarid567@gmail.com</string>
+
+    <!-- %1$s gets replaced with the name of your icon pack -->
+    <string name="feedback_subject_line">%1$s Feedback</string>
+
+    <!--
+        License key from Services & APIs on the Developer Console. Same as what's used for license checking.
+        Leave empty to disable the donation function.
+    -->
+    <string name="donate_license_key">
+        MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl/+U1N67r0RjHi27WgpROnqisct9WBj+5AeNOZ3U/rw/WZI6cv/oGsMqsV0PegbH3bSIFRpwyXukOGYCwM62i4j5djTH181/nMxx8xei1HXCS+sctW+4fwBXNUq2vyvdUNS5flANI42uxQZwnnzY6zDASZL1gDGpdNtdskqwC5iboSL+xdp7MxDG4dKLu9Plb6ccbiW//3g1i7jsvK6dO37SOLEsKAkRoJhorrzs+lyqN5TpHL0VFG/8Ny1JBslY43sJEY8jXzanTrWeqU1CuD4CURcSMMx09FxFF2W+F6NN8+h+BaO/PU3lAOLpkxjRGRfDjMjAEYzWghurA+H/twIDAQAB
+    </string>
+
+    <!-- Names of donation options, e.g. "Buy me a pizza!" -->
+    <string-array name="donate_option_names">
+        <item>Buy me a soda! (\u20b9 20)</item>
+        <item>Buy me a burger! (\u20b9 50)</item>
+        <item>Buy me a pizza! (\u20b9 150)</item>
+        <item>Buy me a meal! (\u20b9 500)</item>
+    </string-array>
+
+    <!-- Names of donation option IDs, taken from the Developer Console -->
+    <string-array name="donate_option_ids">
+        <item>soda</item>
+        <item>burger</item>
+        <item>pizza</item>
+        <item>meal</item>
+    </string-array>
+
+    <!--
+        Leave array empty to disable paid requests.
+        Each item is how many icons a user can request.
+     -->
+    <integer-array name="paid_requests_counts">
+        <item>3</item>
+        <item>10</item>
+        <item>15</item>
+    </integer-array>
+
+    <!--
+        The price for each paid request option.
+        THIS DOESN'T DETERMINE THE ACTUAL COST OF THE IN-APP PURCHASES ON THE DEV CONSOLE.
+        These prices should match what you configure for the associated in-app purchases.
+    -->
+    <string-array name="paid_request_prices">
+        <item>$1.00</item>
+        <item>$3.00</item>
+        <item>$5.00</item>
+    </string-array>
+
+    <!-- The IDs of the in-app purchase items in the Developer Console for your paid request options. -->
+    <string-array name="paid_request_ids">
+        <item>three</item>
+        <item>ten</item>
+        <item>fifteen</item>
+    </string-array>
+
+    <!-- Leave empty to disable. A URL to a Polar Request Manager server. -->
+    <string name="polar_backend_host">
+
+    </string>
+
+    <!-- Host must also be filled in first. An app API key from Polar Request Manager. -->
+    <string name="polar_backend_apikey">
+
+    </string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="changelog_enabled">true</bool>
+
+    <string-array name="changelog" translatable="false">
+        <item><![CDATA[ 3 new widgets ]]></item>
+        <item><![CDATA[ Support for Android N ]]></item>
+
+    </string-array>
+
+</resources>

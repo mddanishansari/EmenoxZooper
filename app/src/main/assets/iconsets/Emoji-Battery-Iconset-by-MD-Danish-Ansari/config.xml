@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+  <title>Emoji Battery Iconset by MD Danish Ansari</title>
+  <description>Battery Iconset based on emojis created by MD Danish Ansari</description>
+  <icons>icons</icons>
+  <demo>c.png</demo>
+  <default>c.png</default>
+  <!-- Zooper code is #BLEVN# for battery level in numeric -->
+  <mode value="#BLEVN#">Battery Icons</mode>
+
+  <condition>
+    <test>#BSTATN#=5</test>
+    <image>99.png</image>
+  </condition>  
+
+  <condition>
+    <test>#BSTATN#=2</test>
+    <image>c.png</image>
+  </condition>  
+  
+  <condition>
+	<test>#BSTATN#=3</test>
+ 	<condition>
+	  <test>#MODE#&gt;90</test>
+	  <image>99.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;81</test>
+	  <image>90.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;72</test>
+	  <image>81.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;63</test>
+	  <image>72.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;54</test>
+	  <image>63.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;45</test>
+	  <image>54.png</image>
+	</condition>
+		<condition>
+	  <test>#MODE#&gt;36</test>
+	  <image>45.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;27</test>
+	  <image>36.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;18</test>
+	  <image>27.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&gt;9</test>
+	  <image>18.png</image>
+	</condition>
+	<condition>
+	  <test>#MODE#&lt;9</test>
+	  <image>9.png</image>
+	</condition>
+ </condition>
+</config>

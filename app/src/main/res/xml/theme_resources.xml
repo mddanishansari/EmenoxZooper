@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Theme version="1">
+    <Label value="Polar" />
+    <Wallpaper image="polar_wallpaper" />
+    <LockScreenWallpaper image="polar_wallpaper" />
+    <ThemePreview image="polar_preview" />
+    <ThemePreviewWork image="polar_preview" />
+    <ThemePreviewMenu image="polar_preview" />
+    <DockMenuAppIcon selector="half_green" />
+
+    <!-- This is how to format this xml to get your icons to work with LG Home -->
+
+    <AppIcon name="com.afollestad.polar/com.afollestad.polar.ui.MainActivity"
+        image="polar" />
+
+</Theme>

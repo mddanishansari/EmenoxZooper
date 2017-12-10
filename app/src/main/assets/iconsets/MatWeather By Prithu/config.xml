@@ -1,0 +1,179 @@
+<config>
+  <title>MatWeather</title>
+  <description>Clean, Simple and Material Designed Weather Iconset By Prithu Goswami</description>
+  <icons>icons</icons>
+  <demo>sun-with-1cloud.png</demo>
+  <default>unknown.png</default>
+	<!-- We provide current and 7 days weather in day/night and day only mode-->
+	<mode value="#WCCODE#">Current Weather day/night</mode>
+	<mode value="d#WCCODE#">Current Weather day only</mode>
+	<mode value="#W0CODE#">Today's Weather day/night</mode>
+	<mode value="d#W0CODE#">Today's Weather day only</mode>
+	<mode value="#W1CODE#">Tomorrow's Weather day/night</mode>
+	<mode value="d#W1CODE#">Tomorrow's Weather day only</mode>
+	<mode value="#W2CODE#">2 days Weather day/night</mode>
+	<mode value="d#W2CODE#">2 days Weather day only</mode>
+	<mode value="#W3CODE#">3 days Weather day/night</mode>
+	<mode value="d#W3CODE#">3 days Weather day only</mode>
+	<mode value="#W4CODE#">4 days Weather day/night</mode>
+	<mode value="d#W4CODE#">4 days Weather day only</mode>
+	<mode value="#W5CODE#">5 days Weather day/night</mode>
+	<mode value="d#W5CODE#">5 days Weather day only</mode>
+	<mode value="#W6CODE#">6 days Weather day/night</mode>
+	<mode value="d#W6CODE#">6 days Weather day only</mode>
+	<mode value="#W7CODE#">7 days Weather day/night</mode>
+	<mode value="d#W7CODE#">7 days Weather day only</mode>
+    <!--
+    We start with the "night" icons, these will be shown only during night, if something is not found
+    inside these block parser will show the "daily" icon in the following block, please add items here
+    if your iconset supports more night icons (like night snow)
+    -->
+   <condition>
+      <!-- We just check if sunrise hour is greater than current (#AISDAY# = 0 means "is night") -->
+      <test>#AISDAY#=0</test>
+      <!-- Storm -->
+    <condition>
+      <test>#MODE#=1</test>
+      <test>#MODE#=2</test>
+      <image>moon-clouds-thunder-01.png</image>
+    </condition>
+	<condition>
+	  <!-- Drizzle / Rain-->
+	  <test>#MODE#=3</test>
+	  <test>#MODE#=4</test>
+	  <image>moon-drizzle-01.png</image>
+	</condition>
+	<condition>
+      <!-- Showers -->
+      <test>#MODE#=5</test>
+      <image>moon-drizzle-01.png</image>
+    </condition>
+	<condition>
+	  <!-- Flurries -->
+	  <test>#MODE#=6</test>
+	  <image>moon-with-clouds-littlesnow.png</image>
+	</condition>
+	<condition>
+	  <!-- Rain an d Snow -->
+	  <test>#MODE#=7</test>
+	  <image>moon-rain-snow-01.png</image>
+	</condition>
+	<condition>
+	  <!-- Snow -->
+	  <test>#MODE#=8</test>
+	  <image>moon-with-clouds-snow.png</image>
+	</condition>
+	<condition>
+	  <!-- Hail -->
+	  <test>#MODE#=9</test>
+	  <image>moon-with-clouds-snow.png</image>
+	</condition>
+	<condition>
+	  <!-- Fog / Haze -->
+	  <test>#MODE#=10</test>
+	  <test>#MODE#=11</test>
+	  <image>moon-haze-01.png</image>
+	</condition>
+	<condition>
+	  <!-- Wind -->
+	  <test>#MODE#=12</test>
+	  <image>moon-windy-01.png</image>
+	</condition>	
+	<condition>
+	  <!-- Partly cloudy -->
+	  <test>#MODE#=13</test>
+	  <image>moon-with-clouds.png</image>
+	</condition>
+    <condition>
+      <!-- Mostly Cloudy -->
+      <test>#MODE#=14</test>
+      <image>moon-with-clouds.png</image>
+    </condition>
+    <condition>
+	  <!-- Fair/Clear -->
+	  <test>#MODE#=15</test>
+      <test>#MODE#=16</test>
+      <image>moon.png</image>
+	</condition>
+	</condition>
+  <!-- Daily conditions (parser will arrive here if it did not catch anything in night block) -->
+  <condition>
+    <test>#MODE#=1</test>
+    <test>#MODE#=d1</test>
+    <test>#MODE#=2</test>
+    <test>#MODE#=d2</test>
+    <image>clouds-with-lighting-rain.png</image>
+  </condition>
+  <condition>
+    <!-- Drizzle / Rain-->
+    <test>#MODE#=3</test>
+    <test>#MODE#=d3</test>
+    <test>#MODE#=4</test>
+    <test>#MODE#=d4</test>
+    <image>sun-with-2cloud-littlerain.png</image>
+  </condition>
+  <condition>
+    <!-- Showers -->
+    <test>#MODE#=5</test>
+    <test>#MODE#=d5</test>
+    <image>sun-with-2cloud-rain.png</image>
+  </condition>
+  <condition>
+    <!-- Flurries -->
+    <test>#MODE#=6</test>
+    <test>#MODE#=d6</test>
+    <image>sun-with-clouds-littlesnow.png</image>
+  </condition>
+  <condition>
+    <!-- Rain and Snow -->
+    <test>#MODE#=7</test>
+    <test>#MODE#=d7</test>
+    <image>sun-rain-snow-01.png</image>
+  </condition>
+  <condition>
+    <!-- Snow -->
+    <test>#MODE#=8</test>
+    <test>#MODE#=d8</test>
+    <image>sun-with-clouds-snow.png</image>
+  </condition>
+  <condition>
+    <!-- Hail -->
+    <test>#MODE#=9</test>
+    <test>#MODE#=d9</test>
+    <image>sun-with-clouds-snow.png</image>
+  </condition>
+  <condition>
+    <!-- Fog / Haze -->
+    <test>#MODE#=10</test>
+    <test>#MODE#=d10</test>
+    <test>#MODE#=11</test>
+   <test>#MODE#=d11</test>
+    <image>sun-haze-01.png</image>
+  </condition>
+  <condition>
+    <!-- Wind -->
+    <test>#MODE#=12</test>
+    <test>#MODE#=d12</test>
+    <image>sun-windy-01.png</image>
+  </condition>	
+  <condition>
+    <!-- Partly cloudy -->
+    <test>#MODE#=13</test>
+    <test>#MODE#=d13</test>
+    <image>sun-with-1cloud.png</image>
+  </condition>
+  <condition>
+    <!-- Mostly Cloudy -->
+    <test>#MODE#=14</test>
+    <test>#MODE#=d14</test>
+    <image>sun-with-3clouds.png</image>
+  </condition>
+  <condition>
+    <!-- Fair/Clear -->
+    <test>#MODE#=15</test>
+    <test>#MODE#=d15</test>
+    <test>#MODE#=16</test>
+    <test>#MODE#=d16</test>
+    <image>sun.png</image>
+  </condition>
+</config>

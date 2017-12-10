@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>
+
+    <category title="New Icons" />
+    <item drawable="polar" />
+    <item drawable="full_pink" />
+    <item drawable="full_orange" />
+    <item drawable="half_indigo" />
+
+
+    <category title="Google Icons" />
+    <item drawable="full_pink" />
+    <item drawable="full_orange" />
+    <item drawable="full_yellow" />
+    <item drawable="full_green" />
+    <item drawable="full_blue" />
+    <item drawable="full_indigo" />
+    <item drawable="half_pink" />
+    <item drawable="half_orange" />
+    <item drawable="half_yellow" />
+    <item drawable="half_green" />
+    <item drawable="half_blue" />
+    <item drawable="half_indigo" />
+
+
+    <category title="All Icons" />
+    <item drawable="full_pink" />
+    <item drawable="full_orange" />
+    <item drawable="full_yellow" />
+    <item drawable="full_green" />
+    <item drawable="full_blue" />
+    <item drawable="full_indigo" />
+    <item drawable="half_pink" />
+    <item drawable="half_orange" />
+    <item drawable="half_yellow" />
+    <item drawable="half_green" />
+    <item drawable="half_blue" />
+    <item drawable="half_indigo" />
+    <item drawable="polar" />
+
+
+</resources>

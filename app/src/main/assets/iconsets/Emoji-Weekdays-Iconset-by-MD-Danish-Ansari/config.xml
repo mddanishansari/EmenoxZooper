@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Weekdays codes:
+ 0 = SUNDAY
+ 1 = MONDAY
+ 2 = TUESDAY
+ 3 = WEDNESDAY
+ 4 = THURSDAY
+ 5 = FRIDAY 
+ 6 = SATURDAY
+-->
+<config>
+  <title>Emoji Weekdays Iconset by MD Danish Ansari</title>
+  <description>Weekdays Iconset based on emojis created by MD Danish Ansari</description>
+  <icons>icons</icons>
+  <demo>saturday.png</demo>
+  <default>default.png</default>
+  <!-- Zooper code is #Df# for days code -->
+  <mode value="#Df#">Today's day</mode>
+  
+  <condition>
+    <!-- Sunday Condition -->
+    <test>#MODE#=0</test>
+    <image>sunday.png</image>
+  </condition>
+  <condition>
+    <!-- Monday Condition -->
+    <test>#MODE#=1</test>
+    <image>monday.png</image>
+  </condition>
+  <condition>
+    <!-- Tuesday Condition -->
+    <test>#MODE#=2</test>
+    <image>tuesday.png</image>
+  </condition>
+  <condition>
+    <!-- Wednesday Condition -->
+    <test>#MODE#=3</test>
+    <image>wednesday.png</image>
+  </condition>
+  <condition>
+    <!-- Thursday Condition -->
+    <test>#MODE#=4</test>
+    <image>thursday.png</image>
+  </condition>
+  <condition>
+    <!-- Friday Condition -->
+    <test>#MODE#=5</test>
+    <image>friday.png</image>
+  </condition>
+  <condition>
+    <!-- Saturday Condition -->
+    <test>#MODE#=6</test>
+    <image>saturday.png</image>
+  </condition>
+</config>
